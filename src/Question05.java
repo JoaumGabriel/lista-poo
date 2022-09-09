@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Question05 {
@@ -34,7 +33,7 @@ public class Question05 {
                 System.out.println(
                         "STATUS: Você não pode se aposentar atualmente, pois não cumpre nenhum dos requisitos!");
             }
-        } catch (InputMismatchException e) {
+        } catch (Exception e) {
             System.out.println("Entrada inválida!");
         }
 
