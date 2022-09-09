@@ -20,6 +20,6 @@ public class Question08 {
             countYears += 1;
         } while (zeWeight < chicoWeight);
 
-        System.out.println("Ze precisa de " + countYears + " anos para ser mais alto que Chico");
+        System.out.println("De acordo com o contador... \nZé precisa de " + countYears + " anos para ser mais alto que Chico");
     }
 }
