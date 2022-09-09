@@ -55,7 +55,7 @@ public class Question03 {
                 break;
             default:
 
-                System.out.println("Número inválido!");
+                System.out.println("Entrada inválida!");
 
         }
 
