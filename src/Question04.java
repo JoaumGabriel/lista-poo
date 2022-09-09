@@ -53,7 +53,7 @@ public class Question04 {
 
                             System.out.println("");
                         } catch (NumberFormatException e) {
-                            System.out.println("Você inseriu um valores de forma incorreta!");
+                            System.out.println("Você inseriu um valor de forma incorreta!");
 
                             System.out.println("");
                         }
@@ -79,7 +79,7 @@ public class Question04 {
 
                             System.out.println("");
                         } catch (NumberFormatException e) {
-                            System.out.println("Você inseriu um valores de forma incorreta!");
+                            System.out.println("Você inseriu um valor de forma incorreta!");
 
                             System.out.println("");
                         }
@@ -105,7 +105,7 @@ public class Question04 {
 
                             System.out.println("");
                         } catch (NumberFormatException e) {
-                            System.out.println("Você inseriu um valores de forma incorreta!");
+                            System.out.println("Você inseriu um valor de forma incorreta!");
 
                             System.out.println("");
                         }
@@ -131,7 +131,7 @@ public class Question04 {
 
                             System.out.println("");
                         } catch (Exception e) {
-                            System.out.println("Você inseriu um valores de forma incorreta!");
+                            System.out.println("Você inseriu um valor de forma incorreta!");
 
                             System.out.println("");
                         }
