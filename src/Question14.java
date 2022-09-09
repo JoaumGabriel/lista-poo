@@ -8,15 +8,23 @@ public class Question14 {
          */
 
         Scanner scan = new Scanner(System.in);
-        double x = 6;
-        double f = x;
 
-        while (x > 1) {
-            f = f * (x - 1);
-            x--;
+        try {
+            System.out.print("Insira o número para fatorar: ");
+            double x = scan.nextDouble();
 
+            double f = x;
+
+            while (x > 1) {
+
+                f = f * (x - 1);
+                x--;
+
+            }
+            System.out.println("Fatorial do número " + x + "é: " + f);
+        } catch (Exception e) {
+            System.out.println("Só é permitido a entrada de números!");
         }
-        System.out.println(f);
 
         scan.close();
     }
