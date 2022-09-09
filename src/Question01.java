@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Question01 {
@@ -34,8 +33,8 @@ public class Question01 {
                 System.out.println("A média das notas válidas foi: " + media);
             }
 
-        } catch (InputMismatchException e) {
-            System.out.println("Entrada inválida!");
+        } catch (Exception e) {
+            System.out.println("Só é permitido a entrada de números!");
         }
 
         scan.close();
