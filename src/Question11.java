@@ -13,31 +13,37 @@ public class Question11 {
 
         Scanner scan = new Scanner(System.in);
 
-        List<Integer> testList = new ArrayList<Integer>();
+        List<Integer> yearList = new ArrayList<Integer>();
 
         int year = 1;
 
-        while (year != 0) {
-            System.out.println("Insira a idade da pessoa do grupo:");
-            year = scan.nextInt();
-            if (year != 0) {
-                testList.add(year);
-            } else {
-                System.out.println("Parando programa");
+        try {
+            while (year != 0) {
+                System.out.println("Insira a idade da pessoa do grupo:");
+                year = scan.nextInt();
+                if (year != 0) {
+                    yearList.add(year);
+                } else {
+                    System.out.println("Parando programa");
+                }
             }
+
+            System.out.println("Lista de idades inseridas: " + yearList);
+
+            int tamanho = yearList.size();
+            int teste = 0;
+
+            for (int x : yearList) {
+                teste += x;
+            }
+
+            float media = (float) teste / tamanho;
+            System.out.println("A média das idades inseridas é: " + media);
+
+        } catch (Exception e) {
+            System.out.println("Só é permitido a entrada de números!");
         }
 
-        System.out.println("Lista de idades inseridas: " + testList);
-
-        int tamanho = testList.size();
-        int teste = 0;
-
-        for (int x : testList) {
-            teste += x;
-        }
-
-        float media = (float) teste / tamanho;
-        System.out.println(media);
         scan.close();
     }
 }
