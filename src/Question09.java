@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Question09 {
     public static void main(String[] args) {
 
@@ -7,15 +9,29 @@ public class Question09 {
          * chamado Triângulo de Floyd. Para n = 6, temos:
          */
 
-        int n = 10;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Digite o número de linhas que deseja imprimir: ");
+
+        int n;
         int i, j, k = 1;
 
-        for (i = 1; i <= n; i++) {
-            for (j = 1; j <= i; j++) {
-                System.out.print(k + " ");
-                k++;
+        try {
+            n = scan.nextInt();
+
+            for (i = 1; i <= n; i++) {
+                for (j = 1; j <= i; j++) {
+                    System.out.print(k + " ");
+                    k++;
+                }
+                System.out.println();
             }
-            System.out.println();
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("Só é permitido a entrada de números!");
         }
+
+        scan.close();
+
     }
 }
